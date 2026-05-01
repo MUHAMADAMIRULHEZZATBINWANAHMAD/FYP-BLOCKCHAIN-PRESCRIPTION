@@ -1,7 +1,7 @@
-
+//project id key: 3n0JLcIpBbxn6qgS
 import { createClient } from '@supabase/supabase-js';
 
-//3n0JLcIpBbxn6qgS
+
 
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY || '';
@@ -19,7 +19,7 @@ if (!supabaseAnonKey) {
   throw new Error('Missing SUPABASE_ANON_KEY in environment variables');
 }
 
-// ✅ Service role client (bypasses RLS, for backend operations)
+// bypasses RLS 
 export const supabase = createClient(supabaseUrl, supabaseServiceKey, {
   auth: {
     autoRefreshToken: false,
@@ -28,7 +28,7 @@ export const supabase = createClient(supabaseUrl, supabaseServiceKey, {
   }
 });
 
-// ✅ Anon key client (subject to RLS, for user auth operations)
+
 export const supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
     autoRefreshToken: true,
@@ -37,6 +37,6 @@ export const supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
   }
 });
 
-console.log('✅ Supabase clients initialized:');
+console.log(' Supabase clients initialized:');
 console.log('   - Service role client: For backend operations (bypasses RLS)');
 console.log('   - Anon key client: For user authentication (subject to RLS)');
