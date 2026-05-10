@@ -1,13 +1,8 @@
-# MediChain: Blockchain-Based Medical Prescription System
+# PHYDIGITAL RETAIL NFT - SUNDAY-CLOTHING.COM
 
 ## Project Overview
-This is a Final Year Project (FYP) utilizing blockchain technology to manage medical prescriptions securely.
+This is a Final Year Project (FYP) utilizing blockchain technology to manage retail clothing online and offering NFT features.
 
 ## Tech Stack
-- **Frontend:** React + Vite
-- **Blockchain:** (e.g., Ethereum/Solidity)
-
-## Getting Started
-1. Clone the repo
-2. Run `npm install`
-3. Run `npm run dev`
+- **Frontend:** React + Vite - TSX
+- **Blockchain:** Typescript
